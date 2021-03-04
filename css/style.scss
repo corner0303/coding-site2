@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+/*===============================================
+# mixins
+=================================================*/
+
+// タブレットもある場合
+$breakpoints: ("sm": "screen and (max-width: 375px)", "tab": "screen and (min-width: 376px)", "pc": "screen and (min-width: 769px)");
+
+//メディアクエリ用のmixinを定義。デフォ値はmd
+@mixin mq($breakpoint: pc) {
+    //map-get(マップ型変数, キー)で値を取得
+    @media #{map-get($breakpoints, $breakpoint)} {
+        //この中をカスタムできる
+        @content;
+    }
+}
+
+/*===============================================
+# color
+=================================================*/
+$text_color1:rgb(51, 51, 51);//メインの色
+$text_color2:rgb(255, 255, 255);//サブの色
+
+$bg_color1:rgb(255, 255, 255);
+$bg_color2:rgb(34, 34, 34);
+$bg_color3:rgb(240, 240, 240);
+$bg_color4:rgb(242, 242, 242);
+
+$hamburger_menu_bg:rgba(34,34,34,.95);
+$hamburger_menu_outbg:rgba(34,34,34,.60);
+
+$topicks_border_color:rgb(221,221,221);
+$text_color3:rgb(206, 206, 206);//日付の色
+
+$footer_bg:rgb(82,82,82);
+
+$btn_bg:rgb(0, 0, 0);
+$btn_color:rgb(255, 255, 255);
+
+
+//dark
+$dark_text_color1:rgb(255, 255, 255);//目立たせたいところ
+$dark_text_color2:#D0D0D0;//普通の文
+$dark_bg: #121212;
+$dark_bg2: #525252;
+$dark_form_color: #D0D0D0;
+/*===============================================
+# font_family
+================================================*/
+$ja_font1: "Yu Gothic", YuGothic, sans-serif;
+$ja_font2: "Noto Sans JP", sans-serif;
+$eng_font1: "Montserrat", sans-serif;
+/*===============================================
+# comonn -全体に共通するスタイル
+=================================================*/
+
+// タブレットもある場合
+
+@include mq("sm") {
+    .is_tab {
+        display: none;
+    }
+
+    .is_pc {
+        display: none;
+    } //pcの時だけ表示 hiddenの逆
+}
+
+
+@include mq("tab") {
+    .is_sm {
+        display: none;
+    } //spの時だけ表示 hiddenの逆
+
+    .is_pc {
+        display: none;
+    } //pcの時だけ表示 hiddenの逆
+}
+
+
+@include mq("pc") {
+    .is_sm {
+        display: none;
+    } //spの時だけ表示 hiddenの逆
+    .is_tab {
+        display: none;
+    }
+}
+
+
+body {
+    font-size: 16px;
+    color: $text_color1;
+    font-family: $ja_font1;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    @include mq(sm) {
+        padding: 0 15px;
+    }
+
+
+    @include mq(tab) {
+        padding: 0 30px;
+    }
+
+
+    @include mq(pc) {
+        padding: 0 170px;
+    }
+}
+

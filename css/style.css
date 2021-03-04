@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/*===============================================
+# mixins
+=================================================*/
+/*===============================================
+# color
+=================================================*/
+/*===============================================
+# font_family
+================================================*/
+/*===============================================
+# comonn -全体に共通するスタイル
+=================================================*/
+@media screen and (max-width: 375px) {
+  .is_tab {
+    display: none;
+  }
+  .is_pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .is_sm {
+    display: none;
+  }
+  .is_pc {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .is_sm {
+    display: none;
+  }
+  .is_tab {
+    display: none;
+  }
+}
+
+body {
+  font-size: 16px;
+  color: #333333;
+  font-family: "Yu Gothic", YuGothic, sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    padding: 0 170px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
