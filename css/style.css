@@ -38,12 +38,15 @@
   }
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-size: 16px;
   color: #333333;
   font-family: "Yu Gothic", YuGothic, sans-serif;
   background: green;
-  overflow-x: hidden;
 }
 
 img {
@@ -250,7 +253,7 @@ img {
 
 .gnav {
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -520px;
   z-index: 10;
