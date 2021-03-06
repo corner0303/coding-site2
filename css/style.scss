@@ -130,6 +130,100 @@ img {
 
     @include mq(pc) {
         padding: 0 170px;
+
+        &--about {
+            padding: 0;
+        }
+    }
+}
+
+.section {
+    @include mq(sm) {
+        padding: 40px 0;
+    }
+
+
+    @include mq(tab) {
+        padding: 40px 0;
+    }
+
+
+    @include mq(pc) {
+        padding: 60px 0;
+    }
+}
+
+.btn {
+    display: inline-block;
+    width: 160px;
+    height: 36px;
+    line-height: 36px;
+    background: $btn_bg;
+
+    &__link {
+        width: inherit;
+        height: inherit;
+        line-height: inherit;
+        display: inline-block;
+        font-family: $eng_font1;
+        color: $btn_color;
+        font-weight: bold;
+        vertical-align: bottom;
+        letter-spacing: -.7px;
+        cursor: pointer;
+        font-size: 12px;
+        padding-left: 41px;
+
+        &--about {
+            @include mq(sm) {
+                font-size: 11px;
+                padding-left: 44px;
+            }
+
+
+            @include mq(tab) {
+                font-size: 11px;
+                padding-left: 44px;
+            }
+
+
+            @include mq(pc) {
+                font-size: 12px;
+                padding-left: 41px;
+            }
+        }
+    }
+
+    &--about {
+        @include mq(sm) {
+            margin-top: 77px;
+        }
+
+
+        @include mq(tab) {
+            margin-top: 50px;
+        }
+
+
+        @include mq(pc) {
+            margin-top: 59px;
+        }
+    }
+
+    &--company_content {
+        @include mq(sm) {
+            margin-top: 29px;
+        }
+
+
+        @include mq(tab) {
+            margin-top: 29px;
+        }
+
+
+        @include mq(pc) {
+            margin-top: 28px;
+        }
     }
 }
 
@@ -168,7 +262,6 @@ img {
     @include mq(sm) {
         width: 189px;
         height: 20.61px;
-
         margin-left: 15px;
     }
 
@@ -357,22 +450,24 @@ img {
 ================================================*/
 
 .mainvisual {
-    background: linear-gradient(to right,$bg_color1 0% , $bg_color1 45.83% , $bg_color2 45.83%,$bg_color2 100%);
     position: relative;
     z-index: 1;
 
     @include mq(sm) {
         height: 667px;
+        background: linear-gradient(to right, $bg_color1 0%, $bg_color1 24.53%, $bg_color2 24.53%, $bg_color2 100%);
     }
 
 
     @include mq(tab) {
         height: 1024px;
+        background: linear-gradient(to right, $bg_color1 0%, $bg_color1 26.82%, $bg_color2 26.82%, $bg_color2 100%);
     }
 
 
     @include mq(pc) {
-        height:740px;
+        height: 740px;
+        background: linear-gradient(to right, $bg_color1 0%, $bg_color1 45.83%, $bg_color2 45.83%, $bg_color2 100%);
     }
 
 
@@ -408,7 +503,6 @@ img {
         height: 227px;
         top: 178px;
         right: 20px;
-
     }
 
 
@@ -417,7 +511,6 @@ img {
         height: 433px;
         top: 333px;
         right: 80px;
-
     }
 
 
@@ -455,7 +548,7 @@ img {
         &--en {
             font-family: $eng_font1;
             font-weight: bold;
-            
+
             @include mq(sm) {
                 font-size: 16px;
                 letter-spacing: .18px;
@@ -480,18 +573,23 @@ img {
         &--lead {
             font-weight: 800;
             font-family: $eng_font1;
+
             @include mq(sm) {
                 font-size: 56px;
                 line-height: .946;
                 letter-spacing: 3.6px;
                 margin-top: 20px;
             }
+
+
             @include mq(tab) {
                 font-size: 56px;
                 line-height: .946;
                 letter-spacing: 3.6px;
                 margin-top: 20px;
             }
+
+
             @include mq(pc) {
                 margin-top: 10px;
                 font-size: 72px;
@@ -500,5 +598,284 @@ img {
                 letter-spacing: 0px;
             }
         }
+    }
+}
+
+/*===============================================
+# about
+================================================*/
+
+.about {
+    @include mq(sm) {
+        margin-top: 78px;
+        background: url(../img/about-img-sm.jpg) center (center / cover);
+        padding: 50px 0;
+    }
+
+
+    @include mq(tab) {
+        margin-top: 80px;
+        background: url(../img/about-img-sm.jpg) center (center / cover);
+        padding: 60px 59px;
+    }
+
+
+    @include mq(pc) {
+        background: url(../img/about-img-big.jpg) center (center / cover);
+        margin: 120px 170px 0;
+        padding: 110px 0 110px 50px;
+    }
+}
+
+.about_body {
+    background: $bg_color1;
+    position: relative;
+    @include mq(sm) {
+        min-height: 441px;
+        padding: 53px 15px 50px 30px;
+    }
+
+
+    @include mq(tab) {
+        min-height: 359px;
+        padding: 43px 30px 40px 30px;
+    }
+
+
+    @include mq(pc) {
+        min-height: 387px;
+        max-width: 590px;
+        padding: 53px 30px 50px 30px;
+    }
+
+
+    &__text {
+        @include mq(sm) {
+            font-size: 14px;
+            margin-top: 29px;
+            line-height: 2;
+            font-family: $ja_font1;
+            letter-spacing: -1.69px;
+            font-weight: 400;
+        }
+
+
+        @include mq(tab) {
+            font-size: 16px;
+            margin-top: 29px;
+            line-height: 2;
+            font-family: $ja_font1;
+            letter-spacing: -2.41px;
+            font-weight: 400;
+        }
+
+
+        @include mq(pc) {
+            font-size: 16px;
+            margin-top: 29px;
+            line-height: 2;
+            font-family: $ja_font2;
+            letter-spacing: -2.34px;
+            font-weight: 400;
+        }
+    }
+}
+
+.about_ttl {
+    display: inline-block;
+
+    &__text {
+        font-family: $eng-font1;
+        font-weight: 800;
+
+        @include mq(sm) {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+
+        @include mq(tab) {
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+
+
+        @include mq(pc) {}
+    }
+}
+
+.about_wrapper{
+    @include mq(pc) {
+        background: linear-gradient(to bottom ,$bg_color1 0%,$bg_color1 83.6%,$bg_color3 83.6% , $bg_color3 100%);
+    }
+}
+/*===============================================
+# company_content
+================================================*/
+
+.company_content{
+    background: $bg_color3;
+}
+
+.company_inner {
+    @include mq(sm) {
+        margin: 0 15px;
+        margin-top: 2px;
+    }
+
+
+    @include mq(tab) {
+        margin-left: 30px;
+        margin-top: 22px;
+    }
+
+
+    @include mq(pc) {
+        margin: 0 170px;
+        padding-top: 22px;
+        display: flex;
+    }
+}
+
+/*===============================================
+# works
+================================================*/
+.works {
+    max-width: 520px;
+    width: 100%;
+
+    &__img {
+        max-width: 520px;
+
+        @include mq(sm) {
+            margin-top: 33px;
+        }
+
+
+        @include mq(tab) {
+            margin-top: 36px;
+        }
+    }
+
+    &__text {
+        @include mq(sm) {
+            margin-top: 34px;
+            letter-spacing: -1.4px;
+        }
+
+
+        @include mq(tab) {
+            letter-spacing: -1.4px;
+            margin-top: 34px;
+        }
+
+
+        @include mq(pc) {
+            letter-spacing: -1.4px;
+            margin-top: 35px;
+        }
+    }
+}
+
+.works_ttl {
+    display: inline-block;
+    margin-top: 1px;
+
+    &__text {
+        font-family: $eng-font1;
+        font-weight: 800;
+
+        @include mq(sm) {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+
+        @include mq(tab) {
+            font-size: 32px;
+            letter-spacing: 2.2px;
+        }
+
+
+        @include mq(pc) {}
+    }
+}
+
+/*===============================================
+# culture
+================================================*/
+.culture {
+    max-width: 520px;
+    width: 100%;
+
+    @include mq(sm) {
+        margin: 0 5px;
+        padding-top:3px;
+    }
+
+    @include mq(pc) {
+        margin-left: 60px;
+    }
+
+
+    &__img {
+        max-width: 520px;
+        max-height: 350px;
+        @include mq(sm) {
+            margin-top: 33px;
+            
+        }
+        @include mq(tab) {
+            
+            margin-top: 36px;
+        }
+    }
+
+    &__text {
+        letter-spacing: -1.4px;
+        margin-top: 29px;
+        margin-bottom: .8px;
+        @include mq(sm) {
+            margin-top:30px;
+        }
+        @include mq(tab) {
+            margin-top: 29px;
+        }
+    }
+}
+
+.culture_ttl {
+    display: inline-block;
+
+    @include mq(sm) {}
+
+
+    @include mq(tab) {
+        margin-top: 3px;
+    }
+
+
+    @include mq(pc) {
+        margin-top: 1px;
+    }
+
+
+    &__text {
+        font-family: $eng-font1;
+        font-weight: 800;
+
+        @include mq(sm) {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+
+        @include mq(tab) {
+            font-size: 32px;
+            letter-spacing: 2.2px;
+        }
+
+
+        @include mq(pc) {}
     }
 }
