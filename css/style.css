@@ -11,7 +11,7 @@
 /*===============================================
 # comonn -全体に共通するスタイル
 =================================================*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .is_tab {
     display: none;
   }
@@ -42,10 +42,22 @@ body {
   font-size: 16px;
   color: #333333;
   font-family: "Yu Gothic", YuGothic, sans-serif;
+  background: green;
+  overflow-x: hidden;
 }
 
 img {
   width: 100%;
+}
+
+.wrapper {
+  position: relative;
+  height: inherit;
+}
+
+.wrapper_on {
+  overflow-y: hidden;
+  height: 100vh;
 }
 
 .container {
@@ -56,7 +68,7 @@ img {
           box-sizing: border-box;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .container {
     padding: 0 15px;
   }
@@ -72,5 +84,275 @@ img {
   .container {
     padding: 0 170px;
   }
+}
+
+/* header
+------------------------------------------------*/
+.header {
+  width: 100%;
+  background-color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+@media screen and (max-width: 376px) {
+  .header {
+    margin-top: 19.8px;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .header {
+    margin-top: 33.84px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header {
+    margin-top: 30px;
+  }
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo__img {
+  height: inherit;
+}
+
+@media screen and (max-width: 376px) {
+  .logo {
+    width: 189px;
+    height: 20.61px;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .logo {
+    width: 189px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .logo {
+    width: 260px;
+    margin-left: 58px;
+  }
+}
+
+.header_logo {
+  display: inline-block;
+}
+
+@media screen and (max-width: 376px) {
+  .header_logo {
+    width: 189px;
+    margin-top: 15px;
+    margin-left: 19.84px;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .header_logo {
+    width: 189px;
+    margin-top: 33.84px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header_logo {
+    width: 260px;
+    margin-top: 30px;
+    margin-left: 58px;
+  }
+}
+
+.hamburger_link {
+  width: 61px;
+  height: 13px;
+  background: #222222;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+}
+
+@media screen and (max-width: 376px) {
+  .hamburger_link {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .hamburger_link {
+    margin-right: 30px;
+    margin-bottom: 2px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hamburger_link {
+    margin-right: 58px;
+    margin-bottom: 4px;
+  }
+}
+
+.hamburger_link__text {
+  font-size: 10px;
+  color: white;
+  margin-left: 7px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.hamburger_icon__part {
+  display: block;
+  background: white;
+  width: 22px;
+  height: 2px;
+  margin-top: 3px;
+  border-radius: 20px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.hamburger_icon__part:first-child {
+  margin-top: 0;
+}
+
+.hamburger_icon__part--open1 {
+  -webkit-transform: rotate(-30deg) translateY(5px);
+          transform: rotate(-30deg) translateY(5px);
+}
+
+.hamburger_icon__part--open2 {
+  width: 0;
+}
+
+.hamburger_icon__part--open3 {
+  -webkit-transform: rotate(30deg) translateY(-7px);
+          transform: rotate(30deg) translateY(-7px);
+}
+
+.gnav {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: -520px;
+  z-index: 10;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: rgba(34, 34, 34, 0.95);
+}
+
+.gnav--open {
+  -webkit-transform: translateX(-520px);
+          transform: translateX(-520px);
+}
+
+@media screen and (max-width: 376px) {
+  .gnav {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .gnav {
+    width: 520px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .gnav {
+    width: 520px;
+  }
+}
+
+.gnav_container {
+  display: block;
+  width: 120px;
+  margin: 180px auto 0;
+  text-align: center;
+}
+
+.gnav_icon__img {
+  display: inline-block;
+  width: 42.15px;
+  text-align: center;
+  margin: 0 auto 40px;
+}
+
+.gnav_list {
+  height: 24px;
+  margin-bottom: 30px;
+}
+
+.gnav_link {
+  line-height: 1;
+  font-size: 20px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hamburger_bg {
+  display: none;
+}
+
+.hamburger_bg--open {
+  display: block;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(34, 34, 34, 0.6);
+}
+
+/*===============================================
+# mainvisual
+================================================*/
+.mainvisual {
+  background: blue;
+}
+
+@media screen and (max-width: 376px) {
+  .mainvisual {
+    height: 667px;
+  }
+}
+
+@media screen and (min-width: 376px) {
+  .mainvisual {
+    height: 1024px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mainvisual {
+    max-height: 740px;
+    height: 100%;
+  }
+}
+
+.mainvisual__bg {
+  height: 640px;
+  max-width: 1100px;
+  width: 100%;
+  background: url(../img/home-page-top.jpg) center right;
 }
 /*# sourceMappingURL=style.css.map */
