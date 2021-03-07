@@ -238,6 +238,20 @@ img {
             margin-top: 27px;
         }
     }
+
+    &--contact_home{
+        @include mq(sm) {
+            margin-top: 57px;
+        }
+
+        @include mq(tab) {
+            margin-top: 38px;
+        }
+
+        @include mq(pc) {
+            margin-top: 52px;
+        }
+    }
 }
 
 /* header
@@ -961,6 +975,7 @@ img {
     border-bottom:2px solid $topicks_border_color ;
     
     @include mq(sm) {
+        margin-top: 11px;
         &:last-child{
             margin-top: 10px;
         }
@@ -1026,3 +1041,120 @@ img {
 
 
 }
+
+
+/*===============================================
+# contact_home
+================================================*/
+
+.contact_home{
+    background: $bg_color4;
+    @include mq(tab) {
+        padding: 40px 0 80px;
+    }
+
+    @include mq(pc) {
+        padding:40px 0 120px;
+    }
+}
+
+.contact_home_content{
+    @include mq(pc) {
+        display:flex;
+        justify-content: space-between;
+    }
+    &__img{
+        background: url(../img/recruit-img.jpg) center / cover;
+        @include mq(sm) {
+            padding-top: 67.24%;
+            
+        }
+        @include mq(tab) {
+            max-width: 520px;
+            width: 100%;
+            height: 350px;
+        }
+        @include mq(pc) {
+            order: 1;
+            max-width: 580px;
+            height: 390px;  
+            // margin-left: 11px;
+            margin-top: 20px;    
+        }
+    }
+}
+
+.contact_home_content_body{
+    @include mq(sm) {
+        margin-top: 30px;
+        
+    }
+    @include mq(tab) {
+        margin-top: 30px;
+        
+    }
+    @include mq(pc) {
+        margin-top: 93px;
+    }
+    &__text{
+        margin-top: 28px;
+        line-height: 2;
+        
+        @include mq(sm) {
+            letter-spacing: -2.09px;
+            
+        }
+        @include mq(tab) {
+            display:block;
+            max-width: 510px;
+            width: 100%;
+            letter-spacing: -2.14px;
+        }
+        @include mq(pc) {
+            max-width: 440px;
+            letter-spacing: -2.01px;
+        }
+    }
+}
+
+.contact_home_ttl{
+    display: inline-block;
+
+    @include mq(sm) {
+        margin-top: 3px;
+
+    }
+
+
+    @include mq(tab) {
+        margin-top: 3px;
+    }
+
+
+    @include mq(pc) {
+        margin-top: 3px;
+    }
+
+
+    &__text {
+        font-family: $eng-font1;
+        font-weight: 800;
+
+        @include mq(sm) {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+
+        @include mq(tab) {
+            font-size: 32px;
+        }
+
+
+        @include mq(pc) {
+            letter-spacing: 2.2px;
+        }
+    }
+}
+
+
