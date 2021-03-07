@@ -113,9 +113,8 @@ img {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1440px;
     width: 100%;
-    margin: 0 auto;
     box-sizing: border-box;
 
     @include mq(sm) {
@@ -223,6 +222,20 @@ img {
 
         @include mq(pc) {
             margin-top: 28px;
+        }
+    }
+
+    &--topic{
+        @include mq(sm) {
+            margin-top: 28px;
+        }
+        @include mq(tab) {
+            margin-top: 30px;
+        }
+        @include mq(pc) {
+            display: block;
+            margin-left: auto;
+            margin-top: 27px;
         }
     }
 }
@@ -630,6 +643,7 @@ img {
 .about_body {
     background: $bg_color1;
     position: relative;
+
     @include mq(sm) {
         min-height: 441px;
         padding: 53px 15px 50px 30px;
@@ -704,16 +718,17 @@ img {
     }
 }
 
-.about_wrapper{
+.about_wrapper {
     @include mq(pc) {
-        background: linear-gradient(to bottom ,$bg_color1 0%,$bg_color1 83.6%,$bg_color3 83.6% , $bg_color3 100%);
+        background: linear-gradient(to bottom, $bg_color1 0%, $bg_color1 83.6%, $bg_color3 83.6%, $bg_color3 100%);
     }
 }
+
 /*===============================================
 # company_content
 ================================================*/
 
-.company_content{
+.company_content {
     background: $bg_color3;
 }
 
@@ -810,8 +825,9 @@ img {
 
     @include mq(sm) {
         margin: 0 5px;
-        padding-top:3px;
+        padding-top: 3px;
     }
+
 
     @include mq(pc) {
         margin-left: 60px;
@@ -821,12 +837,13 @@ img {
     &__img {
         max-width: 520px;
         max-height: 350px;
+
         @include mq(sm) {
             margin-top: 33px;
-            
         }
+
+
         @include mq(tab) {
-            
             margin-top: 36px;
         }
     }
@@ -835,9 +852,12 @@ img {
         letter-spacing: -1.4px;
         margin-top: 29px;
         margin-bottom: .8px;
+
         @include mq(sm) {
-            margin-top:30px;
+            margin-top: 30px;
         }
+
+
         @include mq(tab) {
             margin-top: 29px;
         }
@@ -878,4 +898,131 @@ img {
 
         @include mq(pc) {}
     }
+}
+
+/*===============================================
+# topics
+================================================*/
+
+.topics {
+    background: $bg_color1;
+}
+
+.topics_ttl {
+    display: inline-block;
+
+    @include mq(sm) {
+        margin-top: 3px;
+
+    }
+
+
+    @include mq(tab) {
+        margin-top: 3px;
+    }
+
+
+    @include mq(pc) {
+        margin-top: 3px;
+    }
+
+
+    &__text {
+        font-family: $eng-font1;
+        font-weight: 800;
+
+        @include mq(sm) {
+            font-size: 28px;
+            letter-spacing: 2px;
+        }
+
+
+        @include mq(tab) {
+            font-size: 32px;
+            letter-spacing: 2.2px;
+        }
+
+
+        @include mq(pc) {}
+    }
+}
+
+.topics_content{
+    margin-top: 30px;
+    @include mq(pc) {
+        max-width: 700px;
+        margin-left: auto;
+    }
+}
+
+
+.topic{
+    margin-top: 12px;
+    border-bottom:2px solid $topicks_border_color ;
+    
+    @include mq(sm) {
+        &:last-child{
+            margin-top: 10px;
+        }
+        
+    }
+    @include mq(tab) {
+        
+    }
+    @include mq(pc) {
+        max-width: 1100px;
+        width: 100%;
+    }
+    &__date{
+        color:$text_color3;
+        font-family: $eng-font1;
+        font-weight: 800;
+        display: inline-block;
+        font-size: 10px;
+        @include mq(sm) {
+            vertical-align: sub;
+            &--first{
+                vertical-align: inherit;
+            }
+        }
+        @include mq(tab) {
+            letter-spacing: -0.3px;
+            margin-top: 20px;
+            &--first{
+                margin-top: 0;
+            }
+        }
+        @include mq(pc) {
+            
+        }
+    }
+
+    
+    &__ttl{
+        font-family: $ja_font1;
+        font-weight: bold;
+        letter-spacing: -1.1px;
+        @include mq(sm) {
+            font-size: 12px;
+            margin-top: 12px;
+            margin-bottom: 10px;
+            &--first{
+                line-height: 1.3;
+                margin-bottom: 26px;
+            }
+        }
+
+        @include mq(tab) {
+            margin-top: 11px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            letter-spacing: -2.23px;
+        }
+
+        @include mq(pc) {
+         margin-top: 12px;   
+        }
+    }
+
+
 }
