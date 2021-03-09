@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <!-- 文字化け -->
+  <meta charset="utf-8">
+  <!-- IE対策 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- ビューポートの設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- ディスクリプション -->
+  <meta name="description" content="">
+  <!-- キーワード -->
+  <meta name="keywords" content="キーワード1,キーワード2,キーワード3">
+  <!-- サムネイル設定 -->
+  <meta name=”thumbnail”
+    content=”https://images.pexels.com/photos/374631/pexels-photo-374631.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500” />
+  <!-- ファビコン -->
+  <!-- <link rel="shortcut icon" href="./img/favicon.jpg"> -->
+  <!-- OGP -->
+  <meta property="og:url" content="ページのURL">
+  <meta property="og:type" content="ページの種類">
+  <meta property="og:title" content="ページのタイトル">
+  <meta property="og:description" content="ページの説明文">
+  <meta property="og:image" content="画像のURL">
+  <meta property="og:site_name" content="サイトの名前">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- reset.css -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- googleFonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+  <!-- jquery & iScroll -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+  <!-- goolge font -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  </style>
+  <!-- original -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>テスト</title>
+</head>
+
+<body>
+
+  <header id="header" class="header header--about">
+    <h1 class="logo">
+      <img src="./img/site-logo-big.png" alt="" class="logo__img">
+    </h1>
+    <!-- /.header_logo -->
+    <div class="hamburger_bg" id="hamburger_bg"></div>
+    <div class="hamburger_link" id="hamburger_link">
+      <div class="hamburger_icon">
+        <span class="hamburger_icon__part" id="line1"></span>
+        <span class="hamburger_icon__part" id="line2"></span>
+        <span class="hamburger_icon__part" id="line3"></span>
+      </div>
+      <!-- /.hamburger_icon -->
+      <span class="hamburger_link__text">MENU</span>
+    </div>
+    <!-- /.hamburger_link -->
+    <nav class="gnav" id="gnav">
+      <ul class="gnav_container">
+        <li class="gnav_icon">
+          <a href="https://corner0303.github.io/coding_site1/" class="gnav_icon__img">
+            <img src="./img/gnav-icon.png" alt="">
+          </a>
+        </li>
+        <li class="gnav_list">
+          <a href="https://corner0303.github.io/coding_site1/about.html" class="gnav_link">
+            ABOUT US
+          </a>
+          <!-- /.gnav_link -->
+        </li>
+        <!-- /.gnav_list -->
+        <li class="gnav_list">
+          <a href="" class="gnav_link">
+            WORKS
+          </a>
+          <!-- /.gnav_link -->
+        </li>
+        <!-- /.gnav_list -->
+        <li class="gnav_list">
+          <a href="" class="gnav_link">
+            CULTURE
+          </a>
+          <!-- /.gnav_link -->
+        </li>
+        <!-- /.gnav_list -->
+        <li class="gnav_list">
+          <a href="" class="gnav_link">
+            TOPICS
+          </a>
+          <!-- /.gnav_link -->
+        </li>
+        <!-- /.gnav_list -->
+        <li class="gnav_list">
+          <a href="https://corner0303.github.io/coding_site1/contact.html" class="gnav_link">
+            CONTACT
+          </a>
+          <!-- /.gnav_link -->
+        </li>
+        <!-- /.gnav_list -->
+      </ul>
+      <div class="brightness_change" for="btn_mode">
+        <span class="brightness_change__text">ダークモード</span>
+        <input id="btn_mode" type="checkbox" class="brightness_change__btn">
+        <label for="btn_mode" class="brightness_change__part"></label>
+      </div>
+    </nav>
+  </header>
+  <!-- /#header.header -->
+  <div class="wrapper">
+    <div class="page_top page_top--about">
+      <div class="page_top__bg"></div>
+      <!-- /.page_top__bg -->
+      <div class="page_top_text_box">
+        <p class="page_top_text_box__lead">
+          ABOUT US
+        </p>
+        <!-- /.page_top_text_box__lead -->
+        <p class="page_top_text_box__sub_lead">
+          DIGSMILEについて
+        </p>
+        <!-- /.page_top_text_box__sublead -->
+      </div>
+      <!-- /.page_top_text_box -->
+    </div>
+    <!-- /.page_top -->
+
+    <section class="section vision">
+      <div class="container">
+
+        <div class="vision_body">
+          <div class="vision_ttl">
+            <h2 class="vision_ttl__text">VISION</h2>
+          </div>
+          <p class="vision_body__lead">
+            デザインで人を笑顔にする会社
+          </p>
+          <!-- /.vision_body__lead -->
+          <p class="vision_body__text">
+            私達のデザインで人が笑顔になる。<br>
+            <br>
+            そんなデザインを目指しています。<br>
+            <br>
+            私達が考える人を笑顔にできるデザインとは、<br>
+            デザインが課題を適切に解決ができているかどうか。<br>
+            <br>
+            ビジュアルだけではなく、<br>
+            本当に求められているものは何かを考え抜いて、<br>
+            デザインしていきたい。<br>
+            <br>
+            誰かの幸せを創ることも、<br>
+            世界の常識を変えていくことだってできる。<br>
+            <br>
+            私達はデザインの力を信じています。
+          </p>
+          <!-- /.vision_body__text -->
+        </div>
+        <!-- /.vision_body -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.vision -->
+
+    <section class="section ceo">
+      <div class="container">
+        <div class="ceo_img"></div>
+        <!-- /.ceo_bg -->
+        <div class="ceo_body">
+          <div class="ceo_ttl">
+            <h2 class="ceo_ttl__text">CEO MESSAGE</h2>
+          </div>
+          <p class="ceo_body__text">
+            良いデザインは人を幸せにする。<br>
+            <br>
+            私達はそう信じています。<br>
+            <br>
+            デザインを通して、ビジネスの課題とユーザーの課題を解決することで、世の中を幸せにしていきたい。<br>
+            <br>
+            現在はあらゆるプロダクトがデジタル化されており、デザイナーに対する需要はますます高まっています。それとともに、期待される役割も幅広くなりつつあります。
+            <br>
+            <br>
+            クリエイティブで社会の可能性を切り開いていく。<br>
+            <br>
+            変化の激しい現代、私達はデザインの力で社会を良い方向に変革していく企業を目指していきます。
+          </p>
+          <!-- /.ceo_body__text -->
+        </div>
+        <!-- /.ceo_body -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section ceo -->
+
+    <section class="section company">
+      <div class="container">
+
+        <div class="company_ttl">
+          <h2 class="company_ttl__text">COMPANY</h2>
+        </div>
+        <dl class="company_body">
+          <div class="company_body_item">
+            <dt class="company_body_item__ttl">
+              社名
+            </dt>
+            <dd class="company_body_item__description">
+              株式会社DIGSMILE
+            </dd>
+          </div>
+          <!-- /.company_body_item -->
+          <div class="company_body_item">
+            <dt class="company_body_item__ttl">
+              代表取締役
+            </dt>
+            <dd class="company_body_item__description">
+              テイラー・スウィフト
+            </dd>
+          </div>
+        <!-- /.company_body_item -->
+        <div class="company_body_item">
+          <dt class="company_body_item__ttl">
+            設立
+          </dt>
+          <dd class="company_body_item__description">
+            2020年1月1日
+          </dd>
+        </div>
+        <!-- /.company_body_item -->
+        <div class="company_body_item">
+          <dt class="company_body_item__ttl">
+            資本金
+          </dt>
+          <dd class="company_body_item__description">
+            1億円
+          </dd>
+        </div>
+        <!-- /.company_body_item -->
+        <div class="company_body_item">
+          <dt class="company_body_item__ttl">
+            所在地
+          </dt>
+          <dd class="company_body_item__description">
+            東京都新宿区☓☓0-0-0
+          </dd>
+        </div>
+        <!-- /.company_body_item -->
+        <div class="company_body_item">
+          <dt class="company_body_item__ttl">
+            電話番号
+          </dt>
+          <dd class="company_body_item__description">
+            03-0000-00000
+          </dd>
+        </div>
+        <!-- /.company_body_item -->
+      </dl>
+      <!-- /.company_body -->
+
+      <div class="iframe">
+        <iframe class="iframe__item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8054965624474!2d139.70103201511077!3d35.65716348019995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5334b810a5%3A0xf3ad7394ee54630d!2z44Kw44O844Kw44Or5ZCI5ZCM5Lya56S-!5e0!3m2!1sja!2sjp!4v1615271376564!5m2!1sja!2sjp" width="1100" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <!-- /.iframe_wrap -->
+    </div>
+    <!-- /.container -->
+    </section>
+    <!-- /.section company -->
+    <footer class="footer">
+      <small class="footer__copyright">©2018 DIGSMILE INC.</small>
+    </footer>
+  </div>
+  <!-- /.wrapper -->
+  <script src="./js/dark.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -51,7 +51,7 @@
       <img src="./img/site-logo-big.png" alt="" class="logo__img">
     </h1>
     <!-- /.header_logo -->
-
+    <div class="hamburger_bg" id="hamburger_bg"></div>
     <div class="hamburger_link" id="hamburger_link">
       <div class="hamburger_icon">
         <span class="hamburger_icon__part" id="line1"></span>
@@ -105,6 +105,12 @@
         </li>
         <!-- /.gnav_list -->
       </ul>
+      <div class="brightness_change" for="btn_mode">
+        <span class="brightness_change__text">ダークモード</span>
+        <input id="btn_mode" type="checkbox" class="brightness_change__btn">
+        <label for="btn_mode" class="brightness_change__part"></label>
+      </div>
+    </nav>
   </header>
   <!-- /#header.header -->
   <div class="wrapper">
@@ -233,7 +239,7 @@
       <!-- /.container -->
     </section>
     <!-- /.topics -->
-    <div class="section contact_home">
+    <section class="section contact_home">
       <div class="container">
         <div class="contact_home_content">
           <div class="contact_home_content__img">
@@ -261,10 +267,14 @@
 
       </div>
       <!-- /.container -->
-    </div>
+    </section>
     <!-- /.contact -->
+    <footer class="footer">
+      <small class="footer__copyright">©2018 DIGSMILE INC.</small>
+    </footer>
   </div>
   <!-- /.wrapper -->
+  <script src="./js/dark.js"></script>
   <script src="./js/script.js"></script>
 </body>
 
