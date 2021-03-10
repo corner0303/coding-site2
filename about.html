@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
   <!-- 文字化け -->
   <meta charset="utf-8">
   <!-- IE対策 -->
@@ -18,12 +18,13 @@
   <!-- ファビコン -->
   <!-- <link rel="shortcut icon" href="./img/favicon.jpg"> -->
   <!-- OGP -->
-  <meta property="og:url" content="ページのURL">
-  <meta property="og:type" content="ページの種類">
-  <meta property="og:title" content="ページのタイトル">
-  <meta property="og:description" content="ページの説明文">
-  <meta property="og:image" content="画像のURL">
-  <meta property="og:site_name" content="サイトの名前">
+  <meta property="og:url" content="https://corner0303.github.io/coding-site2/about.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="DIGDMILE:ABOUT US ">
+  <meta property="og:description" content="DIGSMILEについて">
+  <meta property="og:image"
+    content="https://images.pexels.com/photos/460687/pexels-photo-460687.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+  <meta property="og:site_name" content="DIGSMILE">
   <meta property="og:locale" content="ja_JP">
 
   <!-- reset.css -->
@@ -41,14 +42,14 @@
   </style>
   <!-- original -->
   <link rel="stylesheet" href="./css/style.css">
-  <title>テスト</title>
+  <title>DIGDMILE:ABOUT US</title>
 </head>
 
 <body>
 
   <header id="header" class="header header--about">
     <h1 class="logo">
-      <img src="./img/site-logo-big.png" alt="" class="logo__img">
+      <img src="./img/site-logo-big.png" alt="DIGSMILEのロゴです" class="logo__img">
     </h1>
     <!-- /.header_logo -->
     <div class="hamburger_bg" id="hamburger_bg"></div>
@@ -66,7 +67,7 @@
       <ul class="gnav_container">
         <li class="gnav_icon">
           <a href="https://corner0303.github.io/coding-site2/" class="gnav_icon__img">
-            <img src="./img/gnav-icon.png" alt="">
+            <img src="./img/gnav-icon.png" alt="DIGSMILEのロゴです">
           </a>
         </li>
         <li class="gnav_list">
@@ -115,14 +116,14 @@
   <!-- /#header.header -->
   <div class="wrapper">
     <div class="page_top page_top--about">
-      <div class="page_top__bg"></div>
+      <div class="page_top__bg page_top__bg--about"></div>
       <!-- /.page_top__bg -->
-      <div class="page_top_text_box">
-        <p class="page_top_text_box__lead">
+      <div class="page_top_text_box page_top_text_box--about">
+        <p class="page_top_text_box__lead page_top_text_box__lead--about">
           ABOUT US
         </p>
         <!-- /.page_top_text_box__lead -->
-        <p class="page_top_text_box__sub_lead">
+        <p class="page_top_text_box__sub_lead page_top_text_box__sub_lead--about">
           DIGSMILEについて
         </p>
         <!-- /.page_top_text_box__sublead -->
@@ -221,52 +222,54 @@
               テイラー・スウィフト
             </dd>
           </div>
-        <!-- /.company_body_item -->
-        <div class="company_body_item">
-          <dt class="company_body_item__ttl">
-            設立
-          </dt>
-          <dd class="company_body_item__description">
-            2020年1月1日
-          </dd>
-        </div>
-        <!-- /.company_body_item -->
-        <div class="company_body_item">
-          <dt class="company_body_item__ttl">
-            資本金
-          </dt>
-          <dd class="company_body_item__description">
-            1億円
-          </dd>
-        </div>
-        <!-- /.company_body_item -->
-        <div class="company_body_item">
-          <dt class="company_body_item__ttl">
-            所在地
-          </dt>
-          <dd class="company_body_item__description">
-            東京都新宿区☓☓0-0-0
-          </dd>
-        </div>
-        <!-- /.company_body_item -->
-        <div class="company_body_item">
-          <dt class="company_body_item__ttl">
-            電話番号
-          </dt>
-          <dd class="company_body_item__description">
-            03-0000-00000
-          </dd>
-        </div>
-        <!-- /.company_body_item -->
-      </dl>
-      <!-- /.company_body -->
+          <!-- /.company_body_item -->
+          <div class="company_body_item">
+            <dt class="company_body_item__ttl">
+              設立
+            </dt>
+            <dd class="company_body_item__description">
+              2020年1月1日
+            </dd>
+          </div>
+          <!-- /.company_body_item -->
+          <div class="company_body_item">
+            <dt class="company_body_item__ttl">
+              資本金
+            </dt>
+            <dd class="company_body_item__description">
+              1億円
+            </dd>
+          </div>
+          <!-- /.company_body_item -->
+          <div class="company_body_item">
+            <dt class="company_body_item__ttl">
+              所在地
+            </dt>
+            <dd class="company_body_item__description">
+              東京都新宿区☓☓0-0-0
+            </dd>
+          </div>
+          <!-- /.company_body_item -->
+          <div class="company_body_item">
+            <dt class="company_body_item__ttl">
+              電話番号
+            </dt>
+            <dd class="company_body_item__description">
+              03-0000-00000
+            </dd>
+          </div>
+          <!-- /.company_body_item -->
+        </dl>
+        <!-- /.company_body -->
 
-      <div class="iframe">
-        <iframe class="iframe__item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8054965624474!2d139.70103201511077!3d35.65716348019995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5334b810a5%3A0xf3ad7394ee54630d!2z44Kw44O844Kw44Or5ZCI5ZCM5Lya56S-!5e0!3m2!1sja!2sjp!4v1615271376564!5m2!1sja!2sjp" width="1100" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="iframe">
+          <iframe class="iframe__item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8054965624474!2d139.70103201511077!3d35.65716348019995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5334b810a5%3A0xf3ad7394ee54630d!2z44Kw44O844Kw44Or5ZCI5ZCM5Lya56S-!5e0!3m2!1sja!2sjp!4v1615271376564!5m2!1sja!2sjp"
+            width="1100" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!-- /.iframe_wrap -->
       </div>
-      <!-- /.iframe_wrap -->
-    </div>
-    <!-- /.container -->
+      <!-- /.container -->
     </section>
     <!-- /.section company -->
     <footer class="footer">

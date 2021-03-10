@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
   <!-- 文字化け -->
   <meta charset="utf-8">
   <!-- IE対策 -->
@@ -18,12 +18,13 @@
   <!-- ファビコン -->
   <!-- <link rel="shortcut icon" href="./img/favicon.jpg"> -->
   <!-- OGP -->
-  <meta property="og:url" content="ページのURL">
-  <meta property="og:type" content="ページの種類">
-  <meta property="og:title" content="ページのタイトル">
-  <meta property="og:description" content="ページの説明文">
-  <meta property="og:image" content="画像のURL">
-  <meta property="og:site_name" content="サイトの名前">
+ 
+  <meta property="og:url" content="https://corner0303.github.io/coding-site2/contact.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="DIGDMILE:お問い合わせ">
+  <meta property="og:description" content="DIGSMILEのお問い合わせホームです">
+  <meta property="og:image" content="https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+  <meta property="og:site_name" content="DIGSMILE">
   <meta property="og:locale" content="ja_JP">
 
   <!-- reset.css -->
@@ -41,14 +42,14 @@
   </style>
   <!-- original -->
   <link rel="stylesheet" href="./css/style.css">
-  <title>テスト</title>
+  <title>DIGDMILE:お問い合わせ</title>
 </head>
 
 <body>
 
   <header id="header" class="header header--about">
     <h1 class="logo">
-      <img src="./img/site-logo-big.png" alt="" class="logo__img">
+      <img src="./img/site-logo-big.png" alt="DIGSMILEのロゴです" class="logo__img">
     </h1>
     <!-- /.header_logo -->
     <div class="hamburger_bg" id="hamburger_bg"></div>
@@ -66,7 +67,7 @@
       <ul class="gnav_container">
         <li class="gnav_icon">
           <a href="https://corner0303.github.io/coding-site2/" class="gnav_icon__img">
-            <img src="./img/gnav-icon.png" alt="">
+            <img src="./img/gnav-icon.png" alt="DIGSMILEのロゴです">
           </a>
         </li>
         <li class="gnav_list">
@@ -114,161 +115,189 @@
   </header>
   <!-- /#header.header -->
   <div class="wrapper">
-    <div class="page_top page_top--about">
-      <div class="page_top__bg"></div>
+    <div class="page_top page_top--contact">
+      <div class="page_top__bg page_top__bg--contact"></div>
       <!-- /.page_top__bg -->
-      <div class="page_top_text_box">
-        <p class="page_top_text_box__lead">
-          ABOUT US
+      <div class="page_top_text_box page_top_text_box--contact">
+        <p class="page_top_text_box__lead page_top_text_box__lead--contact">
+          CONTACT
         </p>
         <!-- /.page_top_text_box__lead -->
-        <p class="page_top_text_box__sub_lead">
-          DIGSMILEについて
+        <p class="page_top_text_box__sub_lead page_top_text_box__sub_lead--contact">
+          お問い合わせ
         </p>
         <!-- /.page_top_text_box__sublead -->
       </div>
       <!-- /.page_top_text_box -->
+      <span class="scroll_prompt">SCROLL</span>
     </div>
     <!-- /.page_top -->
 
-    <section class="section vision">
+    <div class="section contact_body">
       <div class="container">
+        <form action="" class="form" id="form">
+          <p class="form__text">
+            ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。
+          </p>
+          <!-- /.form__text -->
+          <dl class="form_items">
+            <div class="form_item form_item--radio">
+              <dt class="form_item__ttl form_item__ttl--radio">
+                お問い合わせ種別 <span class="form_item__ttl--inner">必須</span>
+              </dt>
+              <!-- /.form_item__ttl -->
+              <dd class="form_item_content form_item_content--radio">
+                <label class="form_radio">
+                  <input type="radio" name="form_radio" class="form_radio__input" value="制作依頼" checked>
+                  <span class="form_radio__part"></span>
+                  <span class="form_radio__text">制作依頼</span>
+                </label>
+                <label class="form_radio">
+                  <input type="radio" name="form_radio" class="form_radio__input" value="採用">
+                  <span class="form_radio__part"></span>
+                  <span class="form_radio__text">採用</span>
+                </label>
+                <label class="form_radio">
+                  <input type="radio" name="form_radio" class="form_radio__input" value="IR">
+                  <span class="form_radio__part"></span>
+                  <span class="form_radio__text">IR</span>
+                </label>
+                <label class="form_radio">
+                  <input type="radio" name="form_radio" class="form_radio__input" value="その他">
+                  <span class="form_radio__part"></span>
+                  <span class="form_radio__text form_radio__text--last">その他</span>
+                </label>
+              </dd>
+              <!-- /.form_item__content -->
+            </div>
+            <!-- /.form_item -->
 
-        <div class="vision_body">
-          <div class="vision_ttl">
-            <h2 class="vision_ttl__text">VISION</h2>
+            <div class="form_item form_item--company">
+              <dt class="form_item__ttl form_item__ttl--company">
+                会社名・団体名
+              </dt>
+              <!-- /.form_item__ttl -->
+              <dd class="form_item_content form_item_content--company">
+                <input type="text" class="form_item_content__input form_item_content__input--company">
+              </dd>
+              <!-- /.form_item__content -->
+            </div>
+            <!-- /.form_item -->
+
+            <div class="form_item form_item--name">
+              <dt class="form_item__ttl form_item__ttl--name">
+                お名前 <span class="form_item__ttl--inner">必須</span>
+              </dt>
+              <!-- /.form_item__ttl -->
+              <dd class="form_item_content form_item_content--name" id="form_name">
+                <input type="text" class="form_item_content__input form_item_content__input--name" required id="name_input">
+                <div class="form_item_content__none">入力されていません。</div>
+
+              </dd>
+              <!-- /.form_item__content -->
+            </div>
+            <!-- /.form_item -->
+
+            <div class="form_item form_item--email">
+              <dt class="form_item__ttl form_item__ttl--email">
+                メールアドレス <span class="form_item__ttl--inner">必須</span>
+              </dt>
+              <!-- /.form_item__ttl -->
+              <dd class="form_item_content form_item_content--email">
+                <input type="email" class="form_item_content__input form_item_content__input--email" required id="email_input">
+                <div class="form_item_content__none">入力されていません。</div>
+              </dd>
+              <!-- /.form_item__content -->
+            </div>
+            <!-- /.form_item -->
+
+            <div class="form_item form_item--tel">
+              <dt class="form_item__ttl form_item__ttl--tel">
+                電話番号
+              </dt>
+              <!-- /.form_item__ttl -->
+              <dd class="form_item_content form_item_content--tel">
+                <input type="tel" class="form_item_content__input form_item_content__input--tel">
+              </dd>
+              <!-- /.form_item__content -->
+            </div>
+            <!-- /.form_item -->
+
+            <div class="form_item form_item--content">
+              <dt class="form_item__ttl form_item__ttl--content">
+                お問い合わせ内容 <span class="form_item__ttl--inner">必須</span>
+              </dt>
+              <!-- /.form_item__ttl -->
+              <dd class="form_item_content form_item_content--content">
+                <textarea name="" class="form_item_content__textarea" id="content_input"></textarea>
+                <div class="form_item_content__none">入力されていません。</div>
+              </dd>
+              <!-- /.form_item__content -->
+            </div>
+            <!-- /.form_item -->
+
+            <div class="form_item form_item--privacy">
+              <dt class="privacy">
+                <span class="privacy__ttl">
+                  PRIVACY POLICY
+                </span>
+                <!-- /.privacy__ttl -->
+                <div class="privacy__subject">
+                  個人情報保護方針<br>
+                  株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。<br>
+                  <br>
+                  1.個人情報の収集、利用<br>
+                  当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。<br>
+                  <br>
+                  2.個人情報の第三者への開示と提供<br>
+                  収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。<br>
+                  業務の都合上、業務委託先に個人情報を提供する場合は、機密保持契約等によって業務委託先に個人情報保護を義務付けるとともに、業務委託先が適切に個人情報を取り扱うように管理いたします。<br>
+                  <br>
+                  3.個人情報の保護<br>
+                  当社では、個人情報の紛失、破壊、改ざん、不正アクセス、および漏えい等を防止するため、適切な対策を行います。<br>
+                  <br>
+                  4.法令および関連規範の遵守<br>
+                  当社は、個人情報の取り扱いに関して、個人情報保護法をはじめとする個人情報に関する法令および関連する規範を遵守します。<br>
+                  <br>
+                  5.個人情報の開示・訂正・削除<br>
+                  当社では、個人情報の開示・訂正・削除等の依頼があった場合、情報提供者本人であることを確認の上、すみやかに対応いたします。<br>
+                  <br>
+                  法令や当社方針により、プライバシー・ポリシーを予告なく改訂することがあります。<br>
+                  <br>
+                  お問い合わせ窓口<br>
+                  当社の個人情報の取扱いに関するお問い合わせは下記までご連絡お願いいたします。<br>
+                  株式会社DIGSMILE<br>
+                  03-0000-00000
+                </div>
+                <!-- /.privacy_subject -->
+              </dt>
+              <!-- /.form_item__ttl -->
+              <dd class="form_item_content form_item_content--privacy" data-chcek="no_check">
+                <label class="form_checkbox" id="checkbox_trigger">
+                  <input type="checkbox" name="" class="form_checkbox__input" required id="checkbox_input">
+                  <span class="form_checkbox__part"></span>
+                  <span class="form_checkbox__text">個人情報の取り扱いについて同意のうえ送信します。</span>
+                  <div class="form_checkbox__none" id="checkbox_error">同意してください。</div>
+
+                </label>
+              </dd>
+              <!-- /.form_item__content -->
+            </div>
+            <!-- /.form_item -->
+          </dl>
+          <div class="btn btn--form">
+            <button type="submit" class="btn__link btn__link--form" id="contact_btn" disabled>送信</button>
+            <!-- /.btn__link -->
           </div>
-          <p class="vision_body__lead">
-            デザインで人を笑顔にする会社
-          </p>
-          <!-- /.vision_body__lead -->
-          <p class="vision_body__text">
-            私達のデザインで人が笑顔になる。<br>
-            <br>
-            そんなデザインを目指しています。<br>
-            <br>
-            私達が考える人を笑顔にできるデザインとは、<br>
-            デザインが課題を適切に解決ができているかどうか。<br>
-            <br>
-            ビジュアルだけではなく、<br>
-            本当に求められているものは何かを考え抜いて、<br>
-            デザインしていきたい。<br>
-            <br>
-            誰かの幸せを創ることも、<br>
-            世界の常識を変えていくことだってできる。<br>
-            <br>
-            私達はデザインの力を信じています。
-          </p>
-          <!-- /.vision_body__text -->
-        </div>
-        <!-- /.vision_body -->
+          <!-- /.btn -->
+        </form>
+        <!-- /#form.form -->
       </div>
       <!-- /.container -->
-    </section>
-    <!-- /.vision -->
-
-    <section class="section ceo">
-      <div class="container">
-        <div class="ceo_img"></div>
-        <!-- /.ceo_bg -->
-        <div class="ceo_body">
-          <div class="ceo_ttl">
-            <h2 class="ceo_ttl__text">CEO MESSAGE</h2>
-          </div>
-          <p class="ceo_body__text">
-            良いデザインは人を幸せにする。<br>
-            <br>
-            私達はそう信じています。<br>
-            <br>
-            デザインを通して、ビジネスの課題とユーザーの課題を解決することで、世の中を幸せにしていきたい。<br>
-            <br>
-            現在はあらゆるプロダクトがデジタル化されており、デザイナーに対する需要はますます高まっています。それとともに、期待される役割も幅広くなりつつあります。
-            <br>
-            <br>
-            クリエイティブで社会の可能性を切り開いていく。<br>
-            <br>
-            変化の激しい現代、私達はデザインの力で社会を良い方向に変革していく企業を目指していきます。
-          </p>
-          <!-- /.ceo_body__text -->
-        </div>
-        <!-- /.ceo_body -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.section ceo -->
-
-    <section class="section company">
-      <div class="container">
-
-        <div class="company_ttl">
-          <h2 class="company_ttl__text">COMPANY</h2>
-        </div>
-        <dl class="company_body">
-          <div class="company_body_item">
-            <dt class="company_body_item__ttl">
-              社名
-            </dt>
-            <dd class="company_body_item__description">
-              株式会社DIGSMILE
-            </dd>
-          </div>
-          <!-- /.company_body_item -->
-          <div class="company_body_item">
-            <dt class="company_body_item__ttl">
-              代表取締役
-            </dt>
-            <dd class="company_body_item__description">
-              テイラー・スウィフト
-            </dd>
-          </div>
-        <!-- /.company_body_item -->
-        <div class="company_body_item">
-          <dt class="company_body_item__ttl">
-            設立
-          </dt>
-          <dd class="company_body_item__description">
-            2020年1月1日
-          </dd>
-        </div>
-        <!-- /.company_body_item -->
-        <div class="company_body_item">
-          <dt class="company_body_item__ttl">
-            資本金
-          </dt>
-          <dd class="company_body_item__description">
-            1億円
-          </dd>
-        </div>
-        <!-- /.company_body_item -->
-        <div class="company_body_item">
-          <dt class="company_body_item__ttl">
-            所在地
-          </dt>
-          <dd class="company_body_item__description">
-            東京都新宿区☓☓0-0-0
-          </dd>
-        </div>
-        <!-- /.company_body_item -->
-        <div class="company_body_item">
-          <dt class="company_body_item__ttl">
-            電話番号
-          </dt>
-          <dd class="company_body_item__description">
-            03-0000-00000
-          </dd>
-        </div>
-        <!-- /.company_body_item -->
-      </dl>
-      <!-- /.company_body -->
-
-      <div class="iframe">
-        <iframe class="iframe__item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.8054965624474!2d139.70103201511077!3d35.65716348019995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5334b810a5%3A0xf3ad7394ee54630d!2z44Kw44O844Kw44Or5ZCI5ZCM5Lya56S-!5e0!3m2!1sja!2sjp!4v1615271376564!5m2!1sja!2sjp" width="1100" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-      <!-- /.iframe_wrap -->
     </div>
-    <!-- /.container -->
-    </section>
-    <!-- /.section company -->
+    <!-- /.section -->
+
+
     <footer class="footer">
       <small class="footer__copyright">©2018 DIGSMILE INC.</small>
     </footer>
